@@ -1,0 +1,65 @@
+:root{
+    --my-primary: #6610F2;
+    --my-secondary: #856bc7;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+@keyframes color-animation {
+    from {
+        background: linear-gradient(to bottom right, #03d79c, #5d9eb0);
+    }
+    to {
+        background: linear-gradient(to bottom right, var(--my-primary), var(--my-secondary));
+    }
+}
+.background{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom right, var(--my-primary), var(--my-secondary));
+    /*animation-name: color-animation;*/
+    /*animation-iteration-count: infinite;*/
+    /*animation-duration: 10s;*/
+    /*animation-timing-function: ease-in-out;*/
+}
+.bg-design{
+    width: 30%;
+    height: 20%;
+    background: white;
+    opacity: .5;
+    margin: 0 auto;
+}
+
+.container.resume{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+.container.resume .profile-overview{
+    flex: 1;
+}
+.container.resume .full-profile{
+    flex: 2;
+    background: blue;
+}
+.profile-card{
+    background: #fff;
+}
+.custom-card-header{
+    padding: 0;
+}
+.card-body{
+    position: relative;
+}
+.profile-picture{
+    margin: -25% auto;
+    border-radius: 50%;
+    background: url("../images/profile-picture.jpg") 5px 0px;
+    background-size: cover;
+    height: 150px;
+    width: 150px;
+    position: relative;
+    box-shadow: -7px 13px 5px 0px rgba(133, 107, 199, .5);
+}
