@@ -2,9 +2,17 @@
     --my-primary: #6610F2;
     --my-secondary: #856bc7;
 }
+
+@font-face {
+    font-family: 'Poppins';
+    src: url("fonts/Poppins-Light.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
 html, body{
     height: 100%;
     width: 100%;
+    font-family: 'Poppins', sans-serif;
 }
 @keyframes color-animation {
     from {
@@ -54,12 +62,20 @@ html, body{
     position: relative;
 }
 .profile-picture{
-    margin: -25% auto;
     border-radius: 50%;
     background: url("../images/profile-picture.jpg") 5px 0px;
     background-size: cover;
     height: 150px;
     width: 150px;
     position: relative;
-    box-shadow: -7px 13px 5px 0px rgba(133, 107, 199, .5);
+    box-shadow: -7px 13px 5px 0px rgba(133, 107, 199, 0.24);
+    box-sizing: border-box;
+    margin: -15% auto 0;
+}
+.profile-name{
+    text-align: center;
+}
+.profile-name h1{
+    padding: 10px;
+    font-size: 36px;
 }
