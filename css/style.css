@@ -76,6 +76,40 @@ html, body{
     text-align: center;
 }
 .profile-name h1{
-    padding: 10px;
+    padding-top: 10px;
     font-size: 36px;
+}
+.profile-name h6{
+    color: var(--my-primary);
+}
+@keyframes blink {
+    from{
+        z-index: 1;
+        /*display: inline-block;*/
+    }
+    to{
+        z-index: -1;
+        /*display: none;*/
+    }
+}
+.blink-underscore:before{
+    position: relative;
+    content: '_';
+    display: inline-block;
+    -webkit-animation-name: blink;
+    -moz-animation-name: blink;
+    -o-animation-name: blink;
+    animation-name: blink;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+}
+.card-social-sites{
+    margin-top: 25px;
+}
+.social-icon{
+    padding: 0 10px;
+}
+.social-site{
+    text-decoration: none;
+    color: #000;
 }
